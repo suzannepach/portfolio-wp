@@ -12,19 +12,20 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'suzannepach-portfolio-wp' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'suzannepach-portfolio-wp' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'suzannepach-portfolio-wp' ), 'suzannepach-portfolio-wp', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
+		<div class="content-wrapper">
+			<div class="site-info">
+				<div class="contact-content">
+       				 <div class="contact-links">
+						<nav class="social-media-navigation" role="navigation">
+							<?php wp_nav_menu( array( 'theme_location' => 'social-media', 'menu_class' => 'social-media-menu' ) ); ?>
+						</nav> <!-- .social-media-navigation -->
+					</div> <!-- .contact-links -->
+      			</div> <!-- .contact-conten -->
+				<div class="site-description copyright">
+					<p>&copy; <?php bloginfo('title'); ?></p>
+				</div> <!-- .site-description.copyright -->
+			</div><!-- .site-info -->	
+		</div><!-- .content-wrapper -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
