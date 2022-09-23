@@ -50,6 +50,7 @@ function suzannepach_portfolio_wp_setup() {
 	register_nav_menus(
 		array(
 			'menu-1' => esc_html__( 'Primary', 'suzannepach-portfolio-wp' ),
+			'social-media'  => __( 'Social Media Nav', 'suzannepach-portfolio-wp' )
 		)
 	);
 

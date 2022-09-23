@@ -35,7 +35,7 @@
 			</div><!-- .site-branding -->
 
 			<nav id="site-navigation" class="main-navigation menu">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'suzannepach-portfolio-wp' ); ?></button>
+				<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'suzannepach-portfolio-wp' ); ?></button> -->
 				<?php
 				wp_nav_menu(
 					array(
