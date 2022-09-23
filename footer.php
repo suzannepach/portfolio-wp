@@ -34,7 +34,9 @@
 		</div><!-- .content-wrapper -->
 	</footer><!-- #colophon -->
 
-	<!-- For now I have added the primary menu twice this is the one that shows on mobile. If I use Grid instead of Flex I can probably use just the one menu. -->
+	<!-- For now I have added the primary menu twice this is the one that 
+	shows on mobile. 
+	If I use Grid instead of Flex I can probably use just the one menu. -->
 	<div id="mobile-menu">
 		<div class="content-wrapper">
 			<nav id="site-navigation" class="main-navigation menu">
