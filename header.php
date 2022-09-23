@@ -34,15 +34,18 @@
 				</div>
 			</div><!-- .site-branding -->
 
+			<!-- For now I have added the primary menu twice this is the one that 
+			shows on desktop. 
+			If I use Grid instead of Flex I can probably use just the one menu. -->
 			<nav id="site-navigation" class="main-navigation menu">
 				<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'suzannepach-portfolio-wp' ); ?></button> -->
 				<?php
-				wp_nav_menu(
-					array(
-						'theme_location' => 'menu-1',
-						'menu_id'        => 'primary-menu',
-					)
-				);
+					wp_nav_menu(
+						array(
+							'theme_location' => 'menu-1',
+							'menu_id'        => 'primary-menu',
+						)
+					);
 				?>
 			</nav><!-- #site-navigation -->
 		</div><!-- .content-wrapper -->
