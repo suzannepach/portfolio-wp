@@ -150,6 +150,22 @@ function suzannepach_portfolio_wp_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'suzannepach_portfolio_wp_scripts' );
 
+/* Creates a custum post type */
+function create_custom_post_types() {
+    register_post_type( 'projects',
+        array(
+            'labels' => array(
+                'name' => __( 'Projects' ),
+                'singular_name' => __( 'Project' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array( 'slug' => 'projects' ),
+        )
+    );
+}
+add_action( 'init', 'create_custom_post_types' );
+
 /**
  * Implement the Custom Header feature.
  */
