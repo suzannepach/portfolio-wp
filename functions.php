@@ -150,7 +150,7 @@ function suzannepach_portfolio_wp_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'suzannepach_portfolio_wp_scripts' );
 
-/* Creates a custum post type */
+/* Creates a custum post type for project posts */
 function create_custom_post_types() {
     register_post_type( 'projects',
         array(
