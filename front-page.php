@@ -20,7 +20,7 @@ get_header();
 	<div class="site-content clearfix">
 		<h4>Recent Work</h4>
 		<ul class="homepage-featured-work">
-		<?php query_posts('posts_per_page=3&post_type=projects'); ?>
+		<?php query_posts('posts_per_page=4&post_type=projects'); ?>
 		<!-- the loop -->
 			<?php while ( have_posts() ) : the_post(); 
 				$image_1 = get_field("image_1");
