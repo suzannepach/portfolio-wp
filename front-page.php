@@ -41,7 +41,6 @@ get_header();
 </section>
 
 <?php
-get_sidebar();
 get_sidebar('about');
 get_footer();
 ?>
