@@ -11,27 +11,19 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<div class="content-wrapper">
-			<div class="site-info">
-				<div class="contact-content">
-       				 <div class="contact-links">
-						<nav class="social-media-navigation" role="navigation">
-							<?php wp_nav_menu( 
-									array( 
-										'theme_location' => 'social-media', 
-										'menu_class' => 'social-media-menu' 
-									) 
-								); 
-							?>
-						</nav> <!-- .social-media-navigation -->
-					</div> <!-- .contact-links -->
-      			</div> <!-- .contact-conten -->
-				<div class="site-description copyright">
-					<p>&copy; <?php bloginfo('title'); ?></p>
-				</div> <!-- .site-description.copyright -->
-			</div><!-- .site-info -->	
-		</div><!-- .content-wrapper -->
+	<footer id="colophon" class="site-footer footer-contact">
+		<nav class="social-media-navigation content-wrapper" role="navigation">
+			<?php wp_nav_menu( 
+					array( 
+						'theme_location' => 'social-media', 
+						'menu_class' => 'social-media-menu' 
+					) 
+				); 
+			?>
+		</nav> <!-- .social-media-navigation -->
+		<div class="site-description copyright">
+			<p>&copy; <?php bloginfo('title'); ?></p>
+		</div> <!-- .site-description.copyright -->
 	</footer><!-- #colophon -->
 
 	<!-- For now I have added the primary menu twice this is the one that 

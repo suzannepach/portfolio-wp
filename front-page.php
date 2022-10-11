@@ -9,29 +9,31 @@
 
 get_header();
 ?>
-<main id="primary" class="site-main">
+<main id="primary" class="site-main front-page">
 	<?php
 			get_template_part( 'template-parts/content', 'page' );
 	?>
 </main><!-- #main -->
 
 <!-- RECENT PROJECTS -->
-<section class="featured-work">
-	<div class="site-content clearfix">
-		<h4>Recent Work</h4>
-		<ul class="homepage-featured-work">
+<section id="work">
+	<div class="site-content clearfix content-wrapper">
+		<h2>Recent Work</h2>
+		<ul class="projects">
 		<?php query_posts('posts_per_page=4&post_type=projects'); ?>
 		<!-- the loop -->
 			<?php while ( have_posts() ) : the_post(); 
 				$image_1 = get_field("image_1");
-				$size = "medium";
+				// $size = "medium";
+				$skills_used = get_field('skills_used');
 			?>
-			<li class="individual-featured-work">
+			<li class="individual-project">
 				<a  href="<?php the_permalink(); ?>">
 					<figure>	
 						<?php echo wp_get_attachment_image( $image_1, $size ); ?>
 					</figure>
-					<h3><?php the_title(); ?></h3>
+					<h4><?php the_title(); ?></h4>
+					<p><span><?php echo $skills_used; ?></span></p>
 				</a>
 			</li>
 			<?php endwhile; // end of the loop. ?> 

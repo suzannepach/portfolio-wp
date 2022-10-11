@@ -1,3 +1,32 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@suzannepach 
+suzannepach
+/
+portfolio-wp
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+portfolio-wp/style.css
+@suzannepach
+suzannepach First commit _s theme
+Latest commit 74fd3df 7 days ago
+ History
+ 1 contributor
+969 lines (819 sloc)  16.4 KB
+
 /*!
 Theme Name: suzannepach-portfolio-wp
 Theme URI: http://underscores.me/
@@ -11,13 +40,10 @@ License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: suzannepach-portfolio-wp
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
-
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned.
-
 suzannepach-portfolio-wp is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
-
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
@@ -47,7 +73,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Utilities
 	- Accessibility
 	- Alignments
-
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -536,11 +561,11 @@ a {
 	color: #4169e1;
 }
 
-a:visited {
+/* a:visited {
 	color: #800080;
-}
+} */
 
-a:hover,
+/* a:hover,
 a:focus,
 a:active {
 	color: #191970;
@@ -553,7 +578,7 @@ a:focus {
 a:hover,
 a:active {
 	outline: 0;
-}
+} */
 
 /* Forms
 --------------------------------------------- */
@@ -967,3 +992,357 @@ textarea {
 	margin-right: auto;
 	margin-bottom: 1.5em;
 }
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+portfolio-wp/style.css at main · suzannepach/portfolio-wp
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* General Styles */
+
+html {
+	font-size: 1em;
+}
+  
+body {
+text-align: center;
+color: #FFFFFF;
+}
+  
+.content-wrapper {
+width: 88.89%;
+margin: 100px 0;
+}
+  
+* {
+margin: 0;
+padding: 0;
+}
+  
+ul, 
+ol {
+	list-style-type: none;
+}
+  
+a {
+color: #FFFFFF;
+text-decoration: none;
+}
+  
+img {
+width: 100%;
+}
+  
+h1, h2 {
+font-family: 'Yeseva One', cursive;
+font-size: 1.875em;
+}
+  
+h3 {
+font-family: 'Josefin Sans', sans-serif;
+font-size: 1.25em;
+font-weight: 400;
+}
+  
+h4 {
+font-family: 'Josefin Sans', sans-serif;
+font-size: 1.125em; 
+font-weight: 700;
+}
+  
+h5 {
+font-family: 'Josefin Sans', sans-serif;
+font-size: .875em; 
+font-weight: 400;
+}
+  
+p {
+font-family: 'Josefin Sans', sans-serif;
+font-size: 1.125em;
+}
+  
+  /* ------------- Base Header - Footer Styles ------------- */
+ 
+  header, 
+  footer,
+  #mobile-menu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+	background-color: #5B86A9;
+	line-height: 1.4;
+  }
+  
+  header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+  }
+  
+  header .content-wrapper,
+  #mobile-menu .content-wrapper, {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-flow: row wrap;
+  }
+  
+  header #name {
+	width: 100%;
+	margin: 15px 0;
+	text-align: left;
+  }
+
+  header #name .site-title {
+	margin: 0;
+  }
+
+  header #name .site-title a:hover {
+	color: #E37957;
+  }
+
+  /* Voorkomt dat je de pagina-header ziet i.p.v. de site header */
+  .entry-header {
+	display: none;
+  }
+  
+  .menu {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-flow: row wrap;
+	width: 100%;
+	margin: 15px 0;
+  }
+  
+  .menu ul {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+  }
+  
+  .menu ul li {
+	width: 31.25%;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 1.25em;
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	padding-top: 5px;
+  }
+  
+  .menu a {
+	color: #5B86A9;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.25em;
+	font-weight: 400;
+  }
+  
+  .menu li:hover {
+	background-color: #E37957;
+	border-radius: 10px;
+  }
+  
+  .menu a:hover {
+	color: #FFFFFF;
+  }
+  
+  header .tablet-menu {
+	display: none
+  }
+  
+  header .content-wrapper {
+	margin: 0;
+  }
+  
+  .footer-contact {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	flex-flow: row wrap;
+  }
+  
+  .footer-contact nav.content-wrapper {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	flex-direction: column;
+	margin: 0;
+  }
+  
+  .footer-contact .menu-social-media-nav-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	/* margin: 50px 0; */
+  }
+  
+  .footer-contact #menu-social-media-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+	width: 86%;
+	margin: 0;
+  }
+  
+  .footer-contact #menu-social-media-nav i {
+	font-size: 3.5em;
+	margin: 50px 0;
+  }
+  
+  .footer-contact #menu-social-media-nav i:hover {
+	color: #E37957;
+  }
+  
+  .footer-contact #menu-social-media-nav li {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .footer-contact .copyright {
+	margin-bottom: 40px;
+  }
+
+  .footer-contact .copyright p {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: .875em;
+    }
+  
+  
+  #mobile-menu {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+  }
+  
+  #mobile-menu .content-wrapper {
+	margin: 0;
+  }
+
+  #mobile-menu .menu-menu-1-container {
+	width: 100%;
+  }
+
+  /* Hero Area */
+
+  .page-content, .entry-content, .entry-summary {
+    margin: 0;
+	}
+  
+  .front-page .wp-block-group__inner-container {
+	min-height: 750px;
+	width: 88.89%;
+  }
+
+  .hero-area {
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+	background: center no-repeat;
+	background-size: cover;
+	min-height: 750px;
+  }
+  
+  .hero-area .content-wrapper, {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-flow: row wrap;
+	margin: 0;
+  }
+  .hero-area h1 {
+	font-family: 'Josefin Sans', sans-serif;
+	margin-top: 150px;
+	margin-bottom: 0;
+	font-size: 2.625em;
+	font-weight: 400;
+	color: #5B86A9;
+	text-align: left;
+	line-height: 1.4;
+  }
+  
+  .hero-area h1 span {
+	font-family: 'Yeseva One', cursive;
+	font-weight: 700;
+	color: #E37957;
+  }
+  
+  /* Work */
+  
+  #work  {
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+	background-color: #5B86A9;
+  }
+  
+  #work .content-wrapper {
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+  }
+  
+  #work .projects {
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+	margin: 0;
+  }
+
+  #work figure {
+	margin: 60px 0 20px 0;
+  }
+
+  #work p {
+	margin-top: 10px;
+	margin-bottom: 0;
+  }
+  
+  /* About */
+  
+  #sidebar-about,
+  #sidebar-about .widget_block {
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+  }
+
+  #sidebar-about .widget_block {
+	margin: 0;
+  }
+
+  #sidebar-about h2 {
+	margin: 30px 0 10px 0;
+	color: #5B86A9;
+	line-height: 1.4;
+	color: #5B86A9;
+  }
+  
+  #sidebar-about h2 span {
+	color: #E37957;
+  }
+  
+  #sidebar-about p {
+	margin-top: 15px;
+	color: #5B86A9;
+	line-height: 1.4;
+	margin-bottom: 0;
+  }
