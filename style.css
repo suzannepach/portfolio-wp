@@ -1346,3 +1346,123 @@ font-size: 1.125em;
 	line-height: 1.4;
 	margin-bottom: 0;
   }
+
+
+  /* ==========================================================================
+   Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   ========================================================================== */
+
+@media only screen and (min-width: 768px) {
+	/*Tablet styles here*/
+	
+	/* General styles */
+	
+	.content-wrapper {
+	  width: 83.33%;
+	}
+	
+	/* Header and footer */
+	
+	header .content-wrapper {
+	  display: flex;
+	  justify-content: space-between;
+	  align-items: center;
+	  flex-flow: row wrap;
+	}
+	
+	header #name {
+	  width: 50%;
+	}
+	
+	#mobile-menu nav {
+	  display: none
+	}
+	
+	header .tablet-menu {
+	  display: flex;
+	  width: 50%;
+	  justify-content: space-between;
+	  align-items: center;
+	  flex-flow: row wrap;
+	}
+
+	header .tablet-menu .menu-menu-1-container {
+		width: 100%;
+	  }
+
+	header .tablet-menu ul li {
+	  width: 33.33%;
+	  background-color: #5B86A9;
+	  border-radius: 0;
+	}
+	
+	header .tablet-menu a {
+	  color: #FFFFFF;
+	}
+	
+	header .tablet-menu li:hover {
+	  background-color: #E37957;
+	  border-radius: 0;
+	}
+	
+	header li:nth-child(2) {
+	  border-left: 1px solid white;
+	  border-right: 1px solid white;
+	}
+	
+	footer .contact-links {
+	  width: 50%;
+	}
+	
+	footer .copyright {
+	  margin-bottom: 15px;
+	}
+	
+	/* Hero-area */
+	
+	.hero-area {
+	  background-image: none;
+	}
+	
+	.hero-area .content-wrapper {
+	  background: url(../img/header-hoop-desk.png) center no-repeat;
+	  background-size: cover;
+	  min-height: 800px;
+	}
+	
+	.hero-area h1 {
+	  font-size: 3.75em;
+	}
+	
+	/* Work */
+	
+	#work .work-items {
+	  justify-content: space-between;
+	}
+	
+	#work article {
+	  display: flex;
+	  justify-content: flex-start;
+	  align-items: center;
+	  flex-flow: column wrap;
+	  flex-basis: 45%;
+	}
+	
+	/* About */
+	
+	#about article {
+	  display: flex;
+	  justify-content: space-between;
+	  align-items: center;
+	  text-align: left;
+	}
+	
+	#about article figure,
+	#about article div {
+	  width: 45%;
+	}
+	
+	#about h2 {
+	  margin: 0;
+	}
