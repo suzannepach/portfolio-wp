@@ -1017,7 +1017,11 @@ portfolio-wp/style.css at main · suzannepach/portfolio-wp
 html {
 	font-size: 1em;
 }
-  
+
+.page {
+	margin: 0;
+}
+
 body {
 text-align: center;
 color: #FFFFFF;
@@ -1427,12 +1431,17 @@ font-size: 1.125em;
 	  border-right: 1px solid white;
 	}
 	
-	footer .contact-links {
+	.footer-contact #menu-social-media-nav {
 	  width: 50%;
 	}
 	
-	footer .copyright {
-	  margin-bottom: 15px;
+	.footer-contact .copyright {
+		margin-bottom: 15px;
+		width: 100%;
+	  }
+	
+	.footer-contact .copyright p {
+		margin-bottom: 0;
 	}
 	
 	/* Hero-area */
@@ -1472,18 +1481,83 @@ font-size: 1.125em;
 	
 	/* About */
 	
-	#about article {
+	#sidebar-about .about-content .wp-block-group__inner-container {
 	  display: flex;
 	  justify-content: space-between;
 	  align-items: center;
 	  text-align: left;
 	}
 	
-	#about article figure,
-	#about article div {
+	#sidebar-about .about-content .wp-block-group__inner-container figure,
+	#sidebar-about .about-content .wp-block-group__inner-container .about-text {
 	  width: 45%;
 	}
-	
-	#about h2 {
+
+	#sidebar-about .about-content .wp-block-group__inner-container figure,
+	#sidebar-about .about-content .wp-block-group__inner-container 
+	.about-text,
+	#sidebar-about .about-content .wp-block-group__inner-container 
+	.about-text .wp-block-group__inner-container {
+	  display: block;
+	}
+
+	#sidebar-about .about-content .wp-block-group__inner-container figure {
 	  margin: 0;
 	}
+	
+	#sidebar-about .about-content .wp-block-group__inner-container h2 {
+	  margin: 0;
+	}
+
+	@media only screen and (min-width: 1200px) {
+/*Desktop styles here*/
+
+/* General styles */
+
+.content-wrapper {
+  width: 80%;
+  max-width: 1468px;
+}
+
+h2 {
+  font-size: 2.625em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.375em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+p {
+  font-size: 1.375em;
+}
+
+/* header and footer */
+
+footer .contact-links {
+  width: 33.33%;
+}
+
+/* Hero area */
+
+.hero-area .content-wrapper {
+  min-height: 1050px;
+}
+
+.hero-area h1 {
+  width: 60%;
+  font-size: 5em;
+}
+
+/* Work */
+
+#work article {
+  flex-basis: 42%;
+}
