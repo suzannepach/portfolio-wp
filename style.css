@@ -1247,11 +1247,15 @@ font-size: 1.125em;
     margin: 0;
 	}
 
+  .front-page article {
+	margin: 0;
+  }
+
 	/* Wordpress adds extra divs, so I had to do 
 	weird things to make flexbox still work.  */
   
-  .hero-area,
-  .wp-block-group__inner-container {
+  .front-page .hero-area,
+  .front-page .wp-block-group__inner-container {
 	display: flex;
 	justify-content: center;
 	flex-flow: row wrap;
@@ -1454,11 +1458,11 @@ font-size: 1.125em;
 	
 	/* Work */
 	
-	#work .work-items {
+	#work .projects {
 	  justify-content: space-between;
 	}
 	
-	#work article {
+	#work .individual-project {
 	  display: flex;
 	  justify-content: flex-start;
 	  align-items: center;
