@@ -1246,28 +1246,40 @@ font-size: 1.125em;
   .page-content, .entry-content, .entry-summary {
     margin: 0;
 	}
-  
-  .front-page .wp-block-group__inner-container {
-	min-height: 750px;
-	width: 88.89%;
-  }
 
-  .hero-area {
+	/* Wordpress adds extra divs, so I had to do 
+	weird things to make flexbox still work.  */
+  
+  .hero-area,
+  .wp-block-group__inner-container {
 	display: flex;
 	justify-content: center;
 	flex-flow: row wrap;
-	background: center no-repeat;
+	background: url(../img/header-hoop-desk.png) center no-repeat;
 	background-size: cover;
 	min-height: 750px;
-  }
-  
-  .hero-area .content-wrapper, {
+	}
+	
+  .front-page .hero-area .wp-block-group__inner-container,
+  .front-page .hero-area .content-wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	}
+
+  .front-page .hero-area .content-wrapper {
+	margin: 0;
+	}
+
+  .hero-area .content-wrapper .wp-block-group__inner-container {
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-start;
 	flex-flow: row wrap;
 	margin: 0;
-  }
+	width: 88.89%;
+	}
+
   .hero-area h1 {
 	font-family: 'Josefin Sans', sans-serif;
 	margin-top: 150px;
@@ -1389,7 +1401,7 @@ font-size: 1.125em;
 
 	header .tablet-menu .menu-menu-1-container {
 		width: 100%;
-	  }
+	}
 
 	header .tablet-menu ul li {
 	  width: 33.33%;
@@ -1430,6 +1442,10 @@ font-size: 1.125em;
 	  background-size: cover;
 	  min-height: 800px;
 	}
+
+	.front-page .wp-block-group__inner-container {
+		width: 83.33%;
+	  }
 	
 	.hero-area h1 {
 	  font-size: 3.75em;
