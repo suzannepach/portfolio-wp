@@ -1433,21 +1433,22 @@ font-size: 1.125em;
 	
 	/* Hero-area */
 	
-	.hero-area {
+	.front-page .hero-area {
 	  background-image: none;
 	}
 	
-	.hero-area .content-wrapper {
+	.front-page .hero-area .content-wrapper {
 	  background: url(../img/header-hoop-desk.png) center no-repeat;
 	  background-size: cover;
 	  min-height: 800px;
+	  width: 100%;
 	}
 
-	.front-page .wp-block-group__inner-container {
+	.front-page .content-wrapper .wp-block-group__inner-container {
 		width: 83.33%;
 	  }
 	
-	.hero-area h1 {
+	.front-page .hero-area h1 {
 	  font-size: 3.75em;
 	}
 	
