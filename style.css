@@ -1275,6 +1275,8 @@ font-size: 1.125em;
 	
   .front-page .hero-area .header-image {
 	padding: 0;
+	align-items: flex-start;
+	min-height: fit-content !important;
   }
 
   .front-page .hero-area .wp-block-group__inner-container,
