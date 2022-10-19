@@ -1261,13 +1261,18 @@ font-size: 1.125em;
   .front-page .hero-area,
   .front-page .wp-block-group__inner-container {
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
+	align-content: flex-start;
 	flex-flow: row wrap;
-	background: url(../img/header-hoop-desk.png) center no-repeat;
+	background: center no-repeat;
 	background-size: cover;
 	min-height: 750px;
 	}
 	
+  .front-page .hero-area .header-image {
+	padding: 0;
+  }
+
   .front-page .hero-area .wp-block-group__inner-container,
   .front-page .hero-area .content-wrapper {
 	width: 100%;
@@ -1288,7 +1293,7 @@ font-size: 1.125em;
 	width: 88.89%;
 	}
 
-  .hero-area h1 {
+	.hero-area .wp-block-cover.header-image h1 {
 	font-family: 'Josefin Sans', sans-serif;
 	margin-top: 150px;
 	margin-bottom: 0;
@@ -1298,7 +1303,7 @@ font-size: 1.125em;
 	text-align: left;
 	line-height: 1.4;
   }
-  
+
   .hero-area h1 span {
 	font-family: 'Yeseva One', cursive;
 	font-weight: 700;
@@ -1450,18 +1455,22 @@ font-size: 1.125em;
 	  background-image: none;
 	}
 	
+	.front-page .hero-area .header-image {
+		width: 83.33%;
+	}
+
 	.front-page .hero-area .content-wrapper {
-	  background: url(../img/header-hoop-desk.png) center no-repeat;
+	  background: center no-repeat;
 	  background-size: cover;
 	  min-height: 800px;
 	  width: 100%;
 	}
 
 	.front-page .content-wrapper .wp-block-group__inner-container {
-		width: 83.33%;
+		width: 100%;
 	  }
 	
-	.front-page .hero-area h1 {
+	.hero-area .wp-block-cover.header-image h1 {
 	  font-size: 3.75em;
 	}
 	
@@ -1563,8 +1572,12 @@ font-size: 1.125em;
 		min-height: 1050px;
 	}
 
-	.front-page .hero-area .content-wrapper {
+	.front-page .hero-area .header-image {
 		width: 80%;
+	}
+
+	.front-page .hero-area .content-wrapper {
+		/* width: 80%; */
 		justify-content: flex-start;
 	  }
   
@@ -1572,9 +1585,9 @@ font-size: 1.125em;
 		width: 100%;
 	}
 
-	.front-page .hero-area h1 {
-	width: 60%;
-	font-size: 5em;
+	.hero-area .wp-block-cover.header-image h1 {
+		width: 60%;
+		font-size: 5em;
 	}
 
 	/* Work */

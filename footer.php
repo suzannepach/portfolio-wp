@@ -11,7 +11,7 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer footer-contact">
+	<footer id="contact" class="site-footer footer-contact">
 		<nav class="social-media-navigation content-wrapper" role="navigation">
 			<?php wp_nav_menu( 
 					array( 
