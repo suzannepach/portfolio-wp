@@ -1268,6 +1268,10 @@ font-size: 1.125em;
 	background-size: cover;
 	min-height: 750px;
 	}
+  
+  .front-page .hero-area .wp-block-group__inner-container {
+	z-index: -1;
+  }
 	
   .front-page .hero-area .header-image {
 	padding: 0;
