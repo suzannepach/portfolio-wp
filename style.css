@@ -1273,7 +1273,8 @@ font-size: 1.125em;
 	z-index: -1;
   }
 	
-  .front-page .hero-area .header-image {
+  /* This helps the correct position of the hero-image.  */
+  .front-page .hero-area .hero-image {
 	padding: 0;
 	align-items: flex-start;
 	min-height: fit-content !important;
@@ -1299,7 +1300,7 @@ font-size: 1.125em;
 	width: 88.89%;
 	}
 
-	.hero-area .wp-block-cover.header-image h1 {
+	.hero-area .wp-block-cover.hero-image h1 {
 	font-family: 'Josefin Sans', sans-serif;
 	margin-top: 150px;
 	margin-bottom: 0;
@@ -1378,6 +1379,87 @@ font-size: 1.125em;
 	margin-bottom: 0;
   }
 
+  /* Contact page styles */
+
+  .contact-page .wp-block-group__inner-container {
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+  }
+
+  .contact-page .content-wrapper {
+	margin-top: 150px;
+	text-align: left;
+  }
+
+  .contact-page .content-wrapper .wp-block-group__inner-container {
+	display: block;
+  }
+
+  .contact-page h1 {
+	color: #5B86A9;
+  }
+
+  .contact-page .nf-form-content {
+	font-family: 'Josefin Sans',sans-serif;
+	font-size: 1.125em;
+  }
+
+  .contact-page .nf-field-label {
+	color: #111;
+	font-weight: 600;
+	margin-bottom: 10px;
+  }
+
+  .contact-page nf-field:nth-child(1) .nf-field-label {
+	font-weight: 400;
+	margin-bottom: 0;
+  }
+
+  .contact-page .nf-field-label .ninja-forms-req-symbol {
+	display: none;
+  }
+
+  .contact-page #nf-form-title-1,
+  .contact-page .nf-before-form-content,
+  .contact-page nf-field:nth-child(1) .nf-field-element,
+  .nf-after-form-content {
+	display: none;
+  }
+
+  .contact-page nf-field .nf-field-container {
+	margin-bottom: 25px;
+  }
+
+  .contact-page nf-field:nth-child(1) .nf-field-container {
+	margin-bottom: 3em;
+  }
+
+  .contact-page .nf-field-element input {
+	width: 100%;
+	padding: 12px;
+  }
+
+  .contact-page .nf-field-element textarea {
+	height: 200px;
+	padding: 12px;
+  }
+
+  .contact-page nf-field:nth-child(5) .nf-field-element input {
+	background-color: #5B86A9;
+	font-size: 1.125em;
+	font-weight: 600;
+	color: white;
+  }
+
+  .contact-page .nf-error .nf-field-element textarea,
+  .contact-page .nf-error .nf-field-element input {
+	border-color: #e80000;
+  }
+
+  .contact-page .nf-error .nf-error-msg {
+	color: #e80000;
+  }
 
   /* ==========================================================================
    Media Queries for Responsive Design.
@@ -1461,7 +1543,7 @@ font-size: 1.125em;
 	  background-image: none;
 	}
 	
-	.front-page .hero-area .header-image {
+	.front-page .hero-area .hero-image {
 		width: 83.33%;
 	}
 
@@ -1476,7 +1558,7 @@ font-size: 1.125em;
 		width: 100%;
 	  }
 	
-	.hero-area .wp-block-cover.header-image h1 {
+	.hero-area .wp-block-cover.hero-image h1 {
 	  font-size: 3.75em;
 	}
 	
@@ -1578,7 +1660,7 @@ font-size: 1.125em;
 		min-height: 1050px;
 	}
 
-	.front-page .hero-area .header-image {
+	.front-page .hero-area .hero-image {
 		width: 80%;
 	}
 
@@ -1591,7 +1673,7 @@ font-size: 1.125em;
 		width: 100%;
 	}
 
-	.hero-area .wp-block-cover.header-image h1 {
+	.hero-area .wp-block-cover.hero-image h1 {
 		width: 60%;
 		font-size: 5em;
 	}
