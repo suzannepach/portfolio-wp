@@ -1026,7 +1026,7 @@ body {
 text-align: center;
 color: #FFFFFF;
 }
-  
+
 .content-wrapper {
 width: 88.89%;
 margin: 100px 0;
@@ -1278,6 +1278,7 @@ font-size: 1.125em;
 	padding: 0;
 	align-items: flex-start;
 	min-height: fit-content !important;
+	width: 100%;
   }
 
   .front-page .hero-area .wp-block-group__inner-container,
@@ -1605,6 +1606,24 @@ font-size: 1.125em;
 	#sidebar-about .about-content .wp-block-group__inner-container h2 {
 	  margin: 0;
 	}
+
+	/* Contact page styles */
+
+	.contact-page nf-fields-wrap {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.contact-page nf-field:nth-child(2n) nf-element input,
+	.contact-page nf-field:nth-child(3n) nf-element input{
+        width: 48%;
+    }
+    
+	.contact-page nf-field:nth-child(5n) nf-element {
+        width: 33%;
+		float: right;
+    }
 
 	@media only screen and (min-width: 1200px) {
 	/*Desktop styles here*/
