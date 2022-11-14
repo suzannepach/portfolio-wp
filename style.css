@@ -1462,6 +1462,12 @@ font-size: 1.125em;
 	color: #e80000;
   }
 
+  .contact-page .nf-response-msg h1,
+  .contact-page .nf-response-msg h2 {
+	color: black;
+	font-family: 'Josefin Sans', sans-serif;
+  }
+
   /* ==========================================================================
    Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -1615,12 +1621,26 @@ font-size: 1.125em;
 		justify-content: space-between;
 	}
 
-	.contact-page nf-field:nth-child(2n) nf-element input,
-	.contact-page nf-field:nth-child(3n) nf-element input{
+	.contact-page nf-fields-wrap nf-field:nth-child(1n)
+	{
+        width: 100%;
+    }
+
+	.contact-page nf-fields-wrap nf-field:nth-child(2n),
+	.contact-page nf-fields-wrap nf-field:nth-child(3n) {
         width: 48%;
     }
     
-	.contact-page nf-field:nth-child(5n) nf-element {
+	.contact-page nf-fields-wrap nf-field:nth-child(4n)
+	{
+        width: 100%;
+    }
+
+	.contact-page nf-fields-wrap nf-field:nth-child(5n) {
+        width: 100%;
+    }
+
+	.contact-page nf-fields-wrap nf-field:nth-child(5n) input {
         width: 33%;
 		float: right;
     }
@@ -1681,6 +1701,7 @@ font-size: 1.125em;
 
 	.front-page .hero-area .hero-image {
 		width: 80%;
+		max-width: 1468px;
 	}
 
 	.front-page .hero-area .content-wrapper {
