@@ -1730,3 +1730,17 @@ font-size: 1.125em;
 	#sidebar-about .widget_block {
 		width: 100%;
 	}
+
+
+	/* Contact page styles */
+
+	.contact-page .nf-form-content {
+		max-width: 1468px;
+		padding: 0;
+
+	.contact-page nf-fields-wrap nf-field:nth-child(2n) input,
+	.contact-page nf-fields-wrap nf-field:nth-child(3n) input,
+	.contact-page nf-fields-wrap nf-field:nth-child(4n) textarea
+	 {
+		background-color: white;
+	}
