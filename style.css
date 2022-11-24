@@ -1468,6 +1468,54 @@ font-size: 1.125em;
 	font-family: 'Josefin Sans', sans-serif;
   }
 
+  /*Single project page*/
+
+  .single-project {
+	margin-top: 75px;
+	text-align: left;
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+  }
+
+  .single-project-sidebar {
+	color: #5B86A9;
+	margin-bottom: 50px;
+  }
+
+  .single-project-sidebar .single-project-skills {
+	font-style: italic;
+  }
+
+  .single-project-sidebar .github-p {
+	margin-bottom: 0;
+  }
+
+  .single-project-sidebar a {
+	color: #5B86A9;
+	font-weight: bold;
+  }
+
+  .single-project-images {
+	background-color: #5B86A9;
+	text-align: left;
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+  }
+
+  .single-project-images .content-wrapper {
+	margin: 100px 0 50px 0;
+  }
+
+  .single-project-images p {
+	margin: 10px 0 50px 0;
+  }
+
+/*END Single project page*/
+
+
+
   /* ==========================================================================
    Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -1644,6 +1692,23 @@ font-size: 1.125em;
         width: 33%;
 		float: right;
     }
+
+	/*Single project page*/
+
+	.single-project .bigger-screen-flex {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		flex-flow: row wrap;
+	}
+
+	.single-project-sidebar {
+		width: 35%;
+	}
+
+	.single-project-images {
+		width: 60%;
+	}
 
 	@media only screen and (min-width: 1200px) {
 	/*Desktop styles here*/

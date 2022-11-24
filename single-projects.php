@@ -26,35 +26,40 @@ get_header();
 			$image_3 = get_field('image_3');
 			$size = "full";
 		?>
-			<article class="case-study clearfix">
-				<aside class="case-study-sidebar">
-					<h2><?php the_title(); ?></h2> 	
-					<h4><span><?php echo $skills_used; ?></span></h4>
 
-					<?php the_content(); ?>
+			<article class="single-project clearfix">
+				<div class= "content-wrapper bigger-screen-flex">
+					<aside class="single-project-sidebar">
+						<h2><?php the_title(); ?></h2> 	
+						<p class="single-project-skills"><?php echo $skills_used; ?></p>
 
-					<p><a href="<?php echo $project_link; ?>" class="read-more-link">Visit Live Site &rsaquo;</a></p>
-					<p><a href="<?php echo $github_link; ?>" class="read-more-link">See Code On GitHub &rsaquo;</a></p>
-				</aside>
-				<div class="case-study-images">
-					<?php if($description_image_1) { ?>
-						<p><?php echo $description_image_1; ?></p> 
-					<?php }
-					if($image_1) { 
-						echo wp_get_attachment_image( $image_1, $size );
-					} 
-					if($description_image_2) {  ?>
-						<p><?php echo $description_image_2; ?></p> 
-					<?php }
-					if($image_2) {
-						echo wp_get_attachment_image( $image_2, $size );
-					}
-					if($description_image_3) {  ?>
-						<p><?php echo $description_image_3; ?></p>
-					<?php }
-					if($image_3) {
-						echo wp_get_attachment_image( $image_3, $size );
-					} ?>
+						<?php the_content(); ?>
+
+						<p><a href="<?php echo $project_link; ?>" class="read-more-link">Visit Live Site &rsaquo;</a></p>
+						<p class="github-p"><a href="<?php echo $github_link; ?>" class="read-more-link">See Code On GitHub &rsaquo;</a></p>	
+					</aside>
+					<div class="single-project-images">
+						<div class= "content-wrapper">
+							<?php if($image_1) { 
+								echo wp_get_attachment_image( $image_1, $size );
+							}
+							if($description_image_1) { ?>
+								<p><?php echo $description_image_1; ?></p> 
+							<?php }
+							if($image_2) {
+								echo wp_get_attachment_image( $image_2, $size );
+							}
+							if($description_image_2) {  ?>
+								<p><?php echo $description_image_2; ?></p> 
+							<?php }
+							if($image_3) {
+								echo wp_get_attachment_image( $image_3, $size );
+							}				
+							if($description_image_3) {  ?>
+								<p><?php echo $description_image_3; ?></p>
+							<?php } ?>
+						</div>
+					</div>
 				</div>
 			</article>	
 
@@ -62,11 +67,6 @@ get_header();
 	</div><!-- .main-content -->
 
 </main><!-- #main -->	
-
-<nav id="navigation" class="container">
-	<div class="left"><a href="<?php echo site_url('/projects/') ?>">&larr; <span>Back to Projects</span></a></div>
-</nav>
-
 
 <?php
 get_footer();
