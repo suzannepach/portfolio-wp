@@ -1515,6 +1515,19 @@ font-size: 1.125em;
 /*END Single project page*/
 
 
+/*Cookie notice*/
+
+.privacy-policy .wp-block-group__inner-container {
+	display: flex;
+	justify-content: center;
+}
+
+.content-wrapper .wp-block-group__inner-container {
+	display: block;
+	color: #5B86A9;
+}
+
+/*END Cookie notice*/
 
   /* ==========================================================================
    Media Queries for Responsive Design.
