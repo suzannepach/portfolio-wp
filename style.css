@@ -1515,19 +1515,30 @@ font-size: 1.125em;
 /*END Single project page*/
 
 
-/*Cookie notice*/
+/*Cookie policy and Privacy policy*/
 
-.privacy-policy .wp-block-group__inner-container {
+.privacy-policy .wp-block-group__inner-container,
+.cookie-policy .wp-block-group__inner-container {
 	display: flex;
 	justify-content: center;
 }
 
-.content-wrapper .wp-block-group__inner-container {
+.privacy-policy .content-wrapper .wp-block-group__inner-container,
+.cookie-policy .content-wrapper .wp-block-group__inner-container,
+.privacy-policy .content-wrapper .wp-block-group__inner-container a,
+.cookie-policy .content-wrapper .wp-block-group__inner-container a {
 	display: block;
 	color: #5B86A9;
+	text-align: left;
 }
 
-/*END Cookie notice*/
+.cookie-policy #cmplz-document {
+	max-width: 100%;
+}
+
+/*END Cookie policy and Privacy policy*/
+
+
 
   /* ==========================================================================
    Media Queries for Responsive Design.
