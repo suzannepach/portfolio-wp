@@ -1096,6 +1096,7 @@ font-size: 1.125em;
 	position: fixed;
 	top: 0;
 	width: 100%;
+	z-index: 1;
   }
   
   header .content-wrapper,
@@ -1222,7 +1223,7 @@ font-size: 1.125em;
   }
   
   .footer-contact .copyright {
-	margin-bottom: 40px;
+	margin-bottom: 60px;
   }
 
   .footer-contact .copyright p {
@@ -1413,8 +1414,11 @@ font-size: 1.125em;
   }
 
   .contact-page nf-field:nth-child(1) .nf-field-label {
-	font-weight: 400;
 	margin-bottom: 0;
+  }
+
+  .contact-page nf-field:nth-child(1) .nf-field-label label {
+	font-weight: 400;
   }
 
   .contact-page .nf-field-label .ninja-forms-req-symbol {
@@ -1655,18 +1659,18 @@ font-size: 1.125em;
 	  flex-basis: 45%;
 	}
 	
-	/* About */
+	/* About tablet */
 	
 	#sidebar-about .about-content .wp-block-group__inner-container {
-	  display: flex;
-	  justify-content: space-between;
-	  align-items: center;
-	  text-align: left;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		text-align: left;
 	}
 	
 	#sidebar-about .about-content .wp-block-group__inner-container figure,
 	#sidebar-about .about-content .wp-block-group__inner-container .about-text {
-	  width: 45%;
+		width: 45%;
 	}
 
 	#sidebar-about .about-content .wp-block-group__inner-container figure,
@@ -1674,15 +1678,15 @@ font-size: 1.125em;
 	.about-text,
 	#sidebar-about .about-content .wp-block-group__inner-container 
 	.about-text .wp-block-group__inner-container {
-	  display: block;
+		display: block;
 	}
 
 	#sidebar-about .about-content .wp-block-group__inner-container figure {
-	  margin: 0;
+		margin: 0;
 	}
 	
 	#sidebar-about .about-content .wp-block-group__inner-container h2 {
-	  margin: 0;
+		margin: 0;
 	}
 
 	/* Contact page styles */
