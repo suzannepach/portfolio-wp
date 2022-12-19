@@ -1088,7 +1088,7 @@ font-size: 1.125em;
 	justify-content: center;
 	align-items: center;
 	flex-flow: row wrap;
-	background-color: #5B86A9;
+	background-color: #537999;
 	line-height: 1.4;
   }
   
@@ -1118,7 +1118,7 @@ font-size: 1.125em;
   }
 
   header #name .site-title a:hover {
-	color: #E37957;
+	color: #D44300;
   }
 
   /* Voorkomt dat je de pagina-header ziet i.p.v. de site header */
@@ -1152,14 +1152,15 @@ font-size: 1.125em;
   }
   
   .menu a {
-	color: #5B86A9;
+	color: #537999
+	;
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 1.25em;
 	font-weight: 400;
   }
   
   .menu li:hover {
-	background-color: #E37957;
+	background-color: #D44300;
 	border-radius: 10px;
   }
   
@@ -1213,7 +1214,7 @@ font-size: 1.125em;
   }
   
   .footer-contact #menu-social-media-nav i:hover {
-	color: #E37957;
+	color: #D44300;
   }
   
   .footer-contact #menu-social-media-nav li {
@@ -1308,7 +1309,7 @@ font-size: 1.125em;
 	margin-bottom: 0;
 	font-size: 2.625em;
 	font-weight: 400;
-	color: #5B86A9;
+	color: #537999;
 	text-align: left;
 	line-height: 1.4;
   }
@@ -1316,7 +1317,7 @@ font-size: 1.125em;
   .hero-area h1 span {
 	font-family: 'Yeseva One', cursive;
 	font-weight: 700;
-	color: #E37957;
+	color: #D44300;
   }
   
   /* Work */
@@ -1325,7 +1326,7 @@ font-size: 1.125em;
 	display: flex;
 	justify-content: center;
 	flex-flow: row wrap;
-	background-color: #5B86A9;
+	background-color: #537999;
   }
   
   #work .content-wrapper {
@@ -1365,18 +1366,18 @@ font-size: 1.125em;
 
   #sidebar-about h2 {
 	margin: 30px 0 10px 0;
-	color: #5B86A9;
+	color: #537999;
 	line-height: 1.4;
-	color: #5B86A9;
+	color: #537999;
   }
   
   #sidebar-about h2 span {
-	color: #E37957;
+	color: #D44300;
   }
   
   #sidebar-about p {
 	margin-top: 15px;
-	color: #5B86A9;
+	color: #537999;
 	line-height: 1.4;
 	margin-bottom: 0;
   }
@@ -1399,7 +1400,7 @@ font-size: 1.125em;
   }
 
   .contact-page h1 {
-	color: #5B86A9;
+	color: #537999;
   }
 
   .contact-page .nf-form-content {
@@ -1451,7 +1452,7 @@ font-size: 1.125em;
   }
 
   .contact-page nf-field:nth-child(5) .nf-field-element input {
-	background-color: #5B86A9;
+	background-color: #537999;
 	font-size: 1.125em;
 	font-weight: 600;
 	color: white;
@@ -1483,7 +1484,7 @@ font-size: 1.125em;
   }
 
   .single-project-sidebar {
-	color: #5B86A9;
+	color: #537999;
 	margin-bottom: 50px;
   }
 
@@ -1496,12 +1497,12 @@ font-size: 1.125em;
   }
 
   .single-project-sidebar a {
-	color: #5B86A9;
+	color: #537999;
 	font-weight: bold;
   }
 
   .single-project-images {
-	background-color: #5B86A9;
+	background-color: #537999;
 	text-align: left;
 	display: flex;
 	justify-content: center;
@@ -1532,7 +1533,7 @@ font-size: 1.125em;
 .privacy-policy .content-wrapper .wp-block-group__inner-container a,
 .cookie-policy .content-wrapper .wp-block-group__inner-container a {
 	display: block;
-	color: #5B86A9;
+	color: #537999;
 	text-align: left;
 }
 
@@ -1589,7 +1590,7 @@ font-size: 1.125em;
 
 	header .tablet-menu ul li {
 	  width: 33.33%;
-	  background-color: #5B86A9;
+	  background-color: #537999;
 	  border-radius: 0;
 	}
 	
@@ -1598,7 +1599,7 @@ font-size: 1.125em;
 	}
 	
 	header .tablet-menu li:hover {
-	  background-color: #E37957;
+	  background-color: #D44300;
 	  border-radius: 0;
 	}
 	
