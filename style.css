@@ -1480,13 +1480,21 @@ font-size: 1.125em;
 	color: white;
   }
 
+  .contact-page nf-field:nth-child(5) .nf-field-element input:hover{
+	background-color: #D44300;
+  }
+
   .contact-page .nf-error .nf-field-element textarea,
   .contact-page .nf-error .nf-field-element input {
-	border-color: #e80000;
+	border-color: #D44300;
+  }
+
+  .nf-error.field-wrap .nf-field-element:after {
+	background: #D44300 !important;
   }
 
   .contact-page .nf-error .nf-error-msg {
-	color: #e80000;
+	color: #D44300;
   }
 
   .contact-page .nf-response-msg h1,
