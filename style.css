@@ -1083,6 +1083,10 @@ p {
 font-family: 'Josefin Sans', sans-serif;
 font-size: 1.125em;
 }
+
+#cmplz-manage-consent button.cmplz-manage-consent {
+	border: 1px solid #537999;
+}
   
   /* ------------- Base Header - Footer Styles ------------- */
  
