@@ -28,6 +28,7 @@ get_header();
 				$skills_used = get_field('skills_used');
 			?>
 			<li class="individual-project">
+				<div class="space-above-project"></div>
 				<a  href="<?php the_permalink(); ?>">
 					<figure>	
 						<?php echo wp_get_attachment_image( $image_1, $size ); ?>

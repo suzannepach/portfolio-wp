@@ -1043,8 +1043,13 @@ ol {
 }
   
 a {
-color: #FFFFFF;
-text-decoration: none;
+	color: #D44300;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #FFF;
+	background-color: #D44300;
 }
   
 img {
@@ -1100,7 +1105,7 @@ font-size: 1.125em;
   }
   
   header .content-wrapper,
-  #mobile-menu .content-wrapper, {
+  #mobile-menu .content-wrapper {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -1117,8 +1122,13 @@ font-size: 1.125em;
 	margin: 0;
   }
 
+  header #name .site-title a {
+	color: #FFF;
+  }
+
   header #name .site-title a:hover {
 	color: #D44300;
+	background-color: transparent;
   }
 
   /* Voorkomt dat je de pagina-header ziet i.p.v. de site header */
@@ -1152,8 +1162,7 @@ font-size: 1.125em;
   }
   
   .menu a {
-	color: #537999
-	;
+	color: #537999;
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 1.25em;
 	font-weight: 400;
@@ -1207,14 +1216,19 @@ font-size: 1.125em;
 	width: 86%;
 	margin: 0;
   }
-  
+
   .footer-contact #menu-social-media-nav i {
 	font-size: 3.5em;
 	margin: 50px 0;
+	}
+
+  .footer-contact #menu-social-media-nav a {
+	color: #FFF;
   }
   
-  .footer-contact #menu-social-media-nav i:hover {
+  .footer-contact #menu-social-media-nav a:hover {
 	color: #D44300;
+	background-color: transparent;
   }
   
   .footer-contact #menu-social-media-nav li {
@@ -1322,6 +1336,10 @@ font-size: 1.125em;
   
   /* Work */
   
+  #work .space-above-project {
+	height: 60px;
+  }
+
   #work  {
 	display: flex;
 	justify-content: center;
@@ -1342,8 +1360,12 @@ font-size: 1.125em;
 	margin: 0;
   }
 
+  #work .individual-project a {
+	color: #FFF;
+  }
+
   #work figure {
-	margin: 60px 0 20px 0;
+	margin: 0 0 20px 0;
   }
 
   #work p {
@@ -1496,8 +1518,7 @@ font-size: 1.125em;
 	margin-bottom: 0;
   }
 
-  .single-project-sidebar a {
-	color: #537999;
+  .single-project-sidebar .read-more-link {
 	font-weight: bold;
   }
 
