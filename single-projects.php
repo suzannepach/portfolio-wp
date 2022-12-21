@@ -35,8 +35,8 @@ get_header();
 
 						<?php the_content(); ?>
 
-						<p><a href="<?php echo $project_link; ?>" class="read-more-link">Visit Live Site &rsaquo;</a></p>
-						<p class="github-p"><a href="<?php echo $github_link; ?>" class="read-more-link">See Code On GitHub &rsaquo;</a></p>	
+						<p><a href="<?php echo $project_link; ?>" class="read-more-link" target="_blank">Visit Live Site &rsaquo;</a></p>
+						<p class="github-p"><a href="<?php echo $github_link; ?>" class="read-more-link" target="_blank">See Code On GitHub &rsaquo;</a></p>	
 					</aside>
 					<div class="single-project-images">
 						<div class= "content-wrapper">
