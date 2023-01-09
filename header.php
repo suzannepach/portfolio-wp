@@ -33,12 +33,13 @@
 		<div class="site-branding content-wrapper">
 			<div id="name">
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
+				<p class="logo_tagline"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo('description'); ?></a></p>
 			</div>
 
 			<!-- For now I have added the primary menu twice this is the one that 
 			shows on desktop. 
 			If I use Grid instead of Flex I can probably use just the one menu. -->
-			<div class="tablet-menu">
+			<div class="top-menu">
 				<nav id="site-navigation" class="main-navigation menu">
 					<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'suzannepach-portfolio-wp' ); ?></button> -->
 					<?php
