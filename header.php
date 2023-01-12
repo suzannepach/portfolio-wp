@@ -32,8 +32,10 @@
 	<header id="masthead" class="site-header">
 		<div class="site-branding content-wrapper">
 			<div id="name">
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
-				<p class="logo_tagline"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo('description'); ?></a></p>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+					<h1 class="site-title"><?php bloginfo('name'); ?></h1>
+					<p class="logo_tagline"><?php bloginfo('description'); ?></p>
+				</a>
 			</div>
 
 			<!-- For now I have added the primary menu twice this is the one that 

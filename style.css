@@ -1122,18 +1122,18 @@ font-size: 1.125em;
 	text-align: left;
   }
 
-  header #name .site-title {
-	margin: 0;
-  }
-
-  header #name .site-title a {
+  header #name a {
 	color: #FFF;
   }
 
-  header #name .site-title a:hover,
-  header #name .logo_tagline a:hover {
+  header #name a:hover,
+  header #name a:hover .logo_tagline {
 	color: #D44300;
 	background-color: transparent;
+  }
+
+  header #name .site-title {
+	margin: 0;
   }
 
   header .logo_tagline {
@@ -1142,10 +1142,6 @@ font-size: 1.125em;
 	font-weight: 400;
 	margin: 0;
 	font-size: 1.57em;
-  }
-
-  header .logo_tagline a {
-	color: white;
   }
 
   /* Voorkomt dat je de pagina-header ziet i.p.v. de site header */
