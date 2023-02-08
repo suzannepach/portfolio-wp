@@ -24,7 +24,7 @@ get_header();
 		<!-- the loop -->
 			<?php while ( have_posts() ) : the_post(); 
 				$image_1 = get_field("image_1");
-				// $size = "medium";
+				$size = "default";
 				$skills_used = get_field('skills_used');
 			?>
 			<li class="individual-project">
